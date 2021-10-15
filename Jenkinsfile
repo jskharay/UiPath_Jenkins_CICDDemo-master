@@ -11,7 +11,7 @@ pipeline {
 	        UIPATH_ORCH_LOGICAL_NAME = "jskharay"
 	        UIPATH_ORCH_TENANT_NAME = "DefaultTenant"
 	        UIPATH_ORCH_FOLDER_NAME = "Default"
-		UIPATH_ORCH_ENVIORNMENT_NAME = "jskharay@gmail.com's workspace machine"
+		UIPATH_ORCH_ENVIORNMENT_NAME = "6392CCC8-9957-43A8-8899-B376B9D51A94"
 		UIPATH_ORCH_API_KEY = "lOF6W-A9pcaPb4nBB4rdmcZmqpNvsdp6Us9npOCh1Tqzb"
 	    }
 	
