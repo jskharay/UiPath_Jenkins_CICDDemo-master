@@ -8,10 +8,10 @@ pipeline {
 	        MINOR = '0'
 	        //Orchestrator Services
 	        UIPATH_ORCH_URL = "https://cloud.uipath.com/"
-	        UIPATH_ORCH_LOGICAL_NAME = "UiPathAdvanceTraining-Jskharay"
-	        UIPATH_ORCH_TENANT_NAME = "UiPathAdvanceTraining-Jskharay"
+	        UIPATH_ORCH_LOGICAL_NAME = "jskharay"
+	        UIPATH_ORCH_TENANT_NAME = "DefaultTenant"
 	        UIPATH_ORCH_FOLDER_NAME = "Default"
-		UIPATH_ORCH_ENVIORNMENT_NAME = "DESKTOP-DP2T9DI"
+		UIPATH_ORCH_ENVIORNMENT_NAME = "JASPREET-MAC-WI"
 	    }
 	
 
