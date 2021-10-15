@@ -10,8 +10,8 @@ pipeline {
 	        UIPATH_ORCH_URL = "https://cloud.uipath.com/"
 	        UIPATH_ORCH_LOGICAL_NAME = "jskharay"
 	        UIPATH_ORCH_TENANT_NAME = "DefaultTenant"
-	        UIPATH_ORCH_FOLDER_NAME = "Default"
-		UIPATH_ORCH_ENVIORNMENT_NAME = "6392CCC8-9957-43A8-8899-B376B9D51A94"
+	        UIPATH_ORCH_FOLDER_NAME = "My Workspace"
+		UIPATH_ORCH_ENVIORNMENT_NAME = ""
 		UIPATH_ORCH_API_KEY = "lOF6W-A9pcaPb4nBB4rdmcZmqpNvsdp6Us9npOCh1Tqzb"
 	    }
 	
@@ -59,14 +59,14 @@ pipeline {
 	            steps {
 	                echo "Deploying ${BRANCH_NAME} to UAT "
 	                UiPathDeploy (
-	                packagePath: "Output\\${env.BUILD_NUMBER}",
 	                orchestratorAddress: "${UIPATH_ORCH_URL}",
 	                orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
 	                folderName: "${UIPATH_ORCH_FOLDER_NAME}",
-	                environments: "${UIPATH_ORCH_ENVIORNMENT_NAME}",
+	                environments: "",
 	                //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
 	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: "${UIPATH_ORCH_API_KEY}"), 
-	
+			entryPointPaths: 'Main.xaml',
+			traceLevel: 'Verbose',
 
 	        )
 	            }
