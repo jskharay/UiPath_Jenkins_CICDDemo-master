@@ -12,6 +12,7 @@ pipeline {
 	        UIPATH_ORCH_TENANT_NAME = "DefaultTenant"
 	        UIPATH_ORCH_FOLDER_NAME = "Default"
 		UIPATH_ORCH_ENVIORNMENT_NAME = "JASPREET-MAC-WI"
+		UIPATH_ORCH_API_KEY = "lOF6W-A9pcaPb4nBB4rdmcZmqpNvsdp6Us9npOCh1Tqzb"
 	    }
 	
 
@@ -64,7 +65,7 @@ pipeline {
 	                folderName: "${UIPATH_ORCH_FOLDER_NAME}",
 	                environments: "${UIPATH_ORCH_ENVIORNMENT_NAME}",
 	                //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
-	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey'), 
+	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: "${APIUserKey}"), 
 	
 
 	        )
