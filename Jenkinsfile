@@ -14,7 +14,7 @@ pipeline {
 		UIPATH_ORCH_ENVIORNMENT_NAME = ""
 		//UIPATH_ORCH_API_KEY = "lOF6W-A9pcaPb4nBB4rdmcZmqpNvsdp6Us9npOCh1Tqzb"
 		UIPATH_ORCH_API_KEY = "NjnzyLoMeTsnxro9q9Ui5hDlyOck4tzkUpYKH-ypa4LUM"
-		env.BRANCH_NAME = "master"
+		//env.BRANCH_NAME = "master"
 	    }
 	
 
