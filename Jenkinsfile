@@ -5,7 +5,7 @@ pipeline {
 	        // Environment Variables
 	        environment {
 	        MAJOR = '1'
-	        MINOR = '0'
+	        MINOR = '2'
 	        //Orchestrator Services
 	        UIPATH_ORCH_URL = "https://cloud.uipath.com/"
 	        UIPATH_ORCH_LOGICAL_NAME = "jskharay"
@@ -44,6 +44,7 @@ pipeline {
 	                      version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],
 	                      useOrchestrator: false,
 			traceLevel: 'Verbose',
+			packagePath: "${WORKSPACE}",
 	        )
 	            }
 	        }
