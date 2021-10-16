@@ -11,7 +11,7 @@ pipeline {
 	        UIPATH_ORCH_LOGICAL_NAME = "jskharay"
 	        UIPATH_ORCH_TENANT_NAME = "DefaultTenant"
 	        UIPATH_ORCH_FOLDER_NAME = "My Workspace"
-		UIPATH_ORCH_ENVIORNMENT_NAME = "DEV"
+		UIPATH_ORCH_ENVIORNMENT_NAME = "6392CCC8-9957-43A8-8899-B376B9D51A94"
 		//UIPATH_ORCH_API_KEY = "lOF6W-A9pcaPb4nBB4rdmcZmqpNvsdp6Us9npOCh1Tqzb"
 		UIPATH_ORCH_API_KEY = "NjnzyLoMeTsnxro9q9Ui5hDlyOck4tzkUpYKH-ypa4LUM"
 		//env.BRANCH_NAME = "master"
@@ -66,7 +66,7 @@ pipeline {
 	                orchestratorAddress: "${UIPATH_ORCH_URL}",
 	                orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
 	                folderName: "${UIPATH_ORCH_FOLDER_NAME}",
-	                environments: "DEV",
+	                //environments: "DEV",
 	                //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
 	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: "APIUserKey"), 
 			entryPointPaths: 'Main.xaml',
